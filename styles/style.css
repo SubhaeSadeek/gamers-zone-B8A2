@@ -190,3 +190,107 @@ nav a {
   margin-top: -40%;
   margin-left: -15%;
 }
+/* Career Section styles */
+
+#career {
+  background-color: #ff42a5;
+  display: flex;
+  /* justify-content: space-around; */
+  padding: 0% 15%;
+}
+/* :::::grid layout for text of career section::::: */
+.career-content-text-1 {
+  grid-area: heading;
+}
+.career-content-text-1 h2 {
+  font-size: 2.5rem;
+}
+.career-content-text-2 {
+  grid-area: position;
+}
+.career-content-text-3 {
+  grid-area: location;
+}
+.career-content-text-4 {
+  grid-area: linkedButtn;
+}
+.career-content-text-2 ul {
+  list-style: none;
+  text-align: left;
+}
+.career-content-text-3 ul {
+  list-style: none;
+  text-align: right;
+}
+
+#career-container-1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "heading heading"
+    "position location"
+    "linkedButtn .";
+  color: #fff;
+}
+.buttn-primary-white {
+  border-radius: 1.5em;
+  font-size: 1.2rem;
+  background: #fff;
+  padding: 20px 25px;
+  color: #ff42a5;
+  cursor: pointer;
+  border: 0;
+}
+/* Button Section Styles */
+.bttn-section {
+  padding-top: 2%;
+}
+#bttn-container-1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3rem;
+  justify-items: center;
+}
+/* .bttn-image {
+  padding-top: 5%;
+} */
+
+.bttn-visual {
+  border-radius: 1.5em;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 20px 25px;
+  border: 0;
+  background: none;
+}
+.bttn-visual img {
+  vertical-align: middle;
+}
+.bttn-visual:hover {
+  border: solid 2px #f94872;
+  color: #f94872;
+}
+/* footer section */
+/* .footer-logo {
+  display: flex;
+  gap: 5%;
+} */
+.footer-logo img {
+  height: 100%;
+  /* vertical-align: middle; */
+}
+.footer-title {
+  color: #0b0223;
+  font-size: 2em;
+  font-weight: 800;
+}
+.text-color {
+  color: #ff42a5;
+}
+
+/* .nav-menu > ul {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+} */
