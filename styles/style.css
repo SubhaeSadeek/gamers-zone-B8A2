@@ -272,25 +272,25 @@ nav a {
   color: #f94872;
 }
 /* footer section */
-/* .footer-logo {
+.footer-logo {
   display: flex;
-  gap: 5%;
-} */
+  gap: 1%;
+}
 .footer-logo img {
   height: 100%;
-  /* vertical-align: middle; */
+  align-self: center;
 }
 .footer-title {
   color: #0b0223;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 800;
 }
 .text-color {
   color: #ff42a5;
 }
 
-/* .nav-menu > ul {
+.nav-menu > ul {
   display: flex;
   align-items: center;
   font-size: 1.5em;
-} */
+}
