@@ -97,3 +97,96 @@ nav a {
   border: 0;
   /* margin: 5%; */
 }
+
+/* we arew game section */
+
+.we-are-gamer {
+  display: flex;
+  justify-content: space-around;
+  gap: 10%;
+  /* margin: 12rem 12rem; */
+  text-align: right;
+}
+.gamer-title-text {
+  font-size: 48px;
+  font-weight: 600;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  /* text-align: right; */
+
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+}
+.we-are-gamer-container-2 {
+  width: 20%;
+}
+/* Funny video and cards section */
+.funny-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.online-games {
+  text-align: center;
+}
+
+.gamer-title-text-black {
+  font-size: 48px;
+  font-weight: 600;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+}
+.images-card {
+  display: grid;
+  grid-template-columns: repeat(4, 12.5fr);
+  gap: 1.5rem;
+  margin: 0% 10%;
+}
+
+.image-card {
+  display: block;
+  margin-bottom: 5%;
+  width: 105%;
+}
+.img-card {
+  text-align: center;
+}
+.image-card-links:hover {
+  opacity: 50%;
+}
+
+/* play instantly section */
+.play-instantly {
+  display: flex;
+  justify-content: center;
+  /* gap: 10%; */
+  margin: 5% 11%;
+}
+#instatnly-container-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instantly-title {
+  width: 59%;
+  height: 90%;
+  text-align: right;
+}
+#instantly-img1 {
+  width: 150%;
+}
+#instatnly-container-3 {
+  position: relative;
+  margin-top: -40%;
+  margin-left: -15%;
+}
