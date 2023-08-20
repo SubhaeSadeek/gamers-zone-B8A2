@@ -196,7 +196,7 @@ nav a {
   background-color: #ff42a5;
   display: flex;
   /* justify-content: space-around; */
-  padding: 0% 15%;
+  padding: 0% 5%;
 }
 /* :::::grid layout for text of career section::::: */
 .career-content-text-1 {
@@ -272,6 +272,14 @@ nav a {
   color: #f94872;
 }
 /* footer section */
+.footer-container {
+  margin-top: 5%;
+  background-color: #0b0223;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .footer-logo {
   display: flex;
   gap: 1%;
@@ -284,13 +292,126 @@ nav a {
   color: #0b0223;
   font-size: 3em;
   font-weight: 800;
-}
-.text-color {
-  color: #ff42a5;
+  color: #fff;
 }
 
-.nav-menu > ul {
+.footer-nav-list {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(100px, 1fr));
+  list-style: none;
+  justify-content: center;
+}
+.footer-nav-list a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+}
+.footer-nav-list li {
+  text-align: center;
+}
+.image-icon {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(70px, 1fr));
+}
+.image-icon img {
+  width: 40px;
+  height: 40px;
+}
+.copy-right {
+  text-align: center;
+  color: #fff;
   display: flex;
-  align-items: center;
-  font-size: 1.5em;
+}
+
+/* media query section */
+/* media query for mobile device */
+@media screen and (max-width: 576px) {
+  nav,
+  .nav-menu > ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .banner-container-1 {
+    text-align: center;
+    text-overflow: clip;
+  }
+  .banner-container-2 img {
+    width: 90%;
+  }
+  .we-are-gamer {
+    flex-direction: column;
+
+    flex-wrap: wrap;
+    gap: 10%;
+  }
+  .we-are-gamer-container-1 img {
+    width: 90%;
+  }
+  .we-are-gamer-container-2 {
+    width: 100%;
+    text-align: center;
+    text-overflow: clip;
+  }
+  .images-card {
+    grid-template-columns: repeat(1, 12.5fr);
+  }
+  .play-instantly {
+    flex-direction: column;
+  }
+  .instantly-title {
+    text-align: center;
+  }
+  .gamer-title-text-black,
+  .gamer-title-text {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+  }
+  #instantly-img1 {
+    width: 100%;
+  }
+  #instatnly-container-3 {
+    margin-top: -40%;
+    margin-left: -1%;
+  }
+  #instatnly-container-3 img {
+    width: 40%;
+  }
+  #career {
+    flex-direction: column;
+    /* padding: 5% 5%; */
+  }
+  .buttn-primary-white {
+    border-radius: 1.5em;
+    font-size: 1rem;
+    background: #fff;
+    padding: 10px 10px;
+    color: #ff42a5;
+    cursor: pointer;
+    border: 0;
+  }
+  #career-container-2 img {
+    width: 100%;
+  }
+  #bttn-container-1 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .bttn-visual {
+    border-radius: 1.5em;
+    font-size: 0.5em;
+    font-weight: 500;
+    padding: 10px 10px;
+  }
+  .bttn-visual img {
+    width: 13%;
+  }
+  .footer-nav-list {
+    grid-template-columns: repeat(3, minmax(400px, 1fr));
+  }
 }
