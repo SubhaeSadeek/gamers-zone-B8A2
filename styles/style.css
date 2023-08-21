@@ -301,14 +301,23 @@ nav a {
   list-style: none;
   justify-content: center;
 }
-.footer-nav-list a {
+.footer-nav-list1 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  list-style: none;
+  justify-content: center;
+}
+.footer-nav-list a,
+.footer-nav-list1 a {
   text-decoration: none;
   color: #fff;
   font-size: 1em;
 }
-.footer-nav-list li {
+.footer-nav-list li,
+.footer-nav-list1 li {
   text-align: center;
 }
+
 .image-icon {
   display: grid;
   grid-template-columns: repeat(6, minmax(70px, 1fr));
@@ -413,5 +422,22 @@ nav a {
   }
   .footer-nav-list {
     grid-template-columns: repeat(3, minmax(400px, 1fr));
+  }
+  .footer-nav-list {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    row-gap: 2em;
+  }
+  .footer-nav-list1 {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    row-gap: 2em;
+  }
+  .image-icon {
+    grid-template-columns: repeat(3, minmax(70px, 1fr));
+    row-gap: 2em;
+  }
+  .copy-right {
+    flex-direction: column;
+    row-gap: 0%;
+    color: #8758f1;
   }
 }
